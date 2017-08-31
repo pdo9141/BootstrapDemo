@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E28294D5-90D1-4A27-B6FD-8831BB7B15A8}"
+	ProjectSection(SolutionItems) = preProject
+		About.html = About.html
+		Contact.html = Contact.html
+		Index.html = Index.html
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{E768AC1A-8B64-4A29-BF98-7C9EEF071B73}"
+	ProjectSection(SolutionItems) = preProject
+		css\bootstrap-theme.css = css\bootstrap-theme.css
+		css\bootstrap-theme.min.css = css\bootstrap-theme.min.css
+		css\bootstrap.css = css\bootstrap.css
+		css\bootstrap.min.css = css\bootstrap.min.css
+		css\site.css = css\site.css
+		css\spacelab-bootstrap-theme.min.css = css\spacelab-bootstrap-theme.min.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fonts", "fonts", "{095ED2CA-C95C-4B8B-9E05-00E8A3BB7704}"
+	ProjectSection(SolutionItems) = preProject
+		fonts\glyphicons-halflings-regular.eot = fonts\glyphicons-halflings-regular.eot
+		fonts\glyphicons-halflings-regular.svg = fonts\glyphicons-halflings-regular.svg
+		fonts\glyphicons-halflings-regular.ttf = fonts\glyphicons-halflings-regular.ttf
+		fonts\glyphicons-halflings-regular.woff = fonts\glyphicons-halflings-regular.woff
+		fonts\glyphicons-halflings-regular.woff2 = fonts\glyphicons-halflings-regular.woff2
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{ED5B41BF-790C-4775-8A42-592DD947FE5C}"
+	ProjectSection(SolutionItems) = preProject
+		js\bootstrap.js = js\bootstrap.js
+		js\bootstrap.min.js = js\bootstrap.min.js
+		js\npm.js = js\npm.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{4E51CAD8-0A07-47A0-8811-AAD2ED58E0C7}"
+	ProjectSection(SolutionItems) = preProject
+		images\carousel-1.jpg = images\carousel-1.jpg
+		images\lebowski-1.jpg = images\lebowski-1.jpg
+		images\lebowski-2.jpg = images\lebowski-2.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E768AC1A-8B64-4A29-BF98-7C9EEF071B73} = {E28294D5-90D1-4A27-B6FD-8831BB7B15A8}
+		{095ED2CA-C95C-4B8B-9E05-00E8A3BB7704} = {E28294D5-90D1-4A27-B6FD-8831BB7B15A8}
+		{ED5B41BF-790C-4775-8A42-592DD947FE5C} = {E28294D5-90D1-4A27-B6FD-8831BB7B15A8}
+		{4E51CAD8-0A07-47A0-8811-AAD2ED58E0C7} = {E28294D5-90D1-4A27-B6FD-8831BB7B15A8}
+	EndGlobalSection
+EndGlobal
