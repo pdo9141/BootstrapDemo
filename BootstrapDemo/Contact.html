@@ -31,7 +31,15 @@
         <section id="body" class="container">
 
             <section id="main" class="col-md-8 col-sm-9">
-                <h1>Contact Us</h1>
+                <div class="page-header">
+                    <ol class="breadcrumb">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html" class="active">Contact</a></li>
+                    </ol>
+                    <h1>Contact Us</h1>
+                </div>
+                
                 <p>
                     Lebowski ipsum when will you find these guys? Lebowski ipsum when will you find these guys? Lebowski ipsum when will you find these guys?
                     Lebowski ipsum when will you find these guys? Lebowski ipsum when will you find these guys? Lebowski ipsum when will you find these guys?
@@ -45,20 +53,80 @@
                         <form>
                             <div class="form-group">
                                 <label for="nameInput">Your Name</label>
-                                <input name="nameInput" type="text" class="form-control" placeholder="e.g., Your Name" />
+                                <div class="input-group">
+                                    <input name="nameInput" type="text" class="form-control" placeholder="e.g., Your Name" />
+                                    <span class="input-group-addon">!</span>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label>Email</label>
-                                <input class="form-control" />
+                                <label for="emailInput" class="control-label col-md-2">Email</label>
+                                <div class="col-md-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">@</span>
+                                        <input type="email" name="emailInput" class="form-control" placeholder="e.g. Your Email" />
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Favorite</label>
+                                <div class="col-md-10">
+                                    <div class="btn-group btn-group-sm" data-toggle="buttons">
+                                        <label class="btn btn-success active"><input type="checkbox" />The Dude</label>
+                                        <label class="btn btn-success"><input type="checkbox" />Donny</label>
+                                        <label class="btn btn-success"><input type="checkbox" />Maude</label>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-success" data-toggle="dropdown">Other <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" tabindex="-1">Walter</a></li>
+                                                <li><a href="#" tabindex="-1">Bunny</a></li>
+                                                <li class="divider"></li>
+                                                <li class="disabled"><a href="#" tabindex="-1">The Big Lebowski</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Favorite Radio</label>
+                                <div class="col-md-10">
+                                    <div class="btn-group btn-group-sm" data-toggle="buttons">
+                                        <label class="btn btn-success active"><input type="radio" />The Dude</label>
+                                        <label class="btn btn-success"><input type="radio" />Donny</label>
+                                        <label class="btn btn-success"><input type="radio" />Maude</label>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn" data-toggle="dropdown">Show Me</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" tabindex="-1">Walter</a></li>
+                                            <li><a href="#" tabindex="-1">Bunny</a></li>
+                                            <li class="divider"></li>
+                                            <li class="disabled"><a href="#" tabindex="-1">The Big Lebowski</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <label>Reason</label>
-                                <select class="form-control">
+                                <!--<select class="form-control">
                                     <option>Adoration</option>
                                     <option>Ordering a White Russian</option>
                                     <option>Complaint</option>
                                     <option>I am lost</option>
-                                </select>
+                                </select>-->
+
+                                <div class="dropdown">
+                                    <button class="btn btn-success" id="pickButton">Pick One...</button>
+                                    <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span></button>
+                                    <ul class="dropdown-menu" id="reasonDropdown">
+                                        <li><a href="#" tabindex="-1">Adoration</a></li>
+                                        <li><a href="#" tabindex="-1">Ordering a White Russian</a></li>
+                                        <li><a href="#" tabindex="-1">Complaint</a></li>
+                                        <li><a href="#" tabindex="-1">I am lost</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label>Message</label>
@@ -130,5 +198,6 @@
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
 </body>
 </html>

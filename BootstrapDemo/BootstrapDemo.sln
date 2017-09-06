@@ -35,6 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{ED5B41BF-790C-
 		js\bootstrap.js = js\bootstrap.js
 		js\bootstrap.min.js = js\bootstrap.min.js
 		js\npm.js = js\npm.js
+		js\site.js = js\site.js
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{4E51CAD8-0A07-47A0-8811-AAD2ED58E0C7}"

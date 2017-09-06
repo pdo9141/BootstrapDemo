@@ -21,9 +21,16 @@
 18) Use .table-responsive on a parent div (don't put this class on table itself, will have no effect) to add scrollbars for the table in mobile view
 19) Use .form-group .form-control for form elements, you can use .btn .btn-success on submit buttons as well (on smaller devices it'll go into .form-horizontal)
 20) Use .form-horizontal .control-label for horizontal forms
-21) 
+21) Use .btn-group to treat many buttons as one singular display. Use .btn-group-vertical to go vertical, use .btn-group-sm to change size
+22) Use data-toggle="buttons" and change button types to labels and then add input checkbox to create toggleable buttons, you can use radio buttons as well
+23) Use .dropdown, data-toggle="dropdown", .dropdown-menu, .divider, .disabled, .active for dropdown
+24) If you want a button group item to display a dropdown, change .dropdown to .btn-group
+25) Use .input-group and .input-group-addon to add information indicator to inputs, you can add before or after or both, you can use glyphicons as well
+26) Use .pager, .pagination, .pagination-sm, .disabled, .active, .previous, .next for paging
+27) Use .thumbnail and .caption for thumbnails
+28) Use .panel, .panel-default, .panel-primary, .panel-info, .panel-title, .panel-footer, .panel-body to get panel semantics, styling, spacing, etc.
+29) Use .well, .well-sm, .well-lg for panel-like sections 
 
 
 
-
-Bootstrap Components
+Bootstrap Plugins
