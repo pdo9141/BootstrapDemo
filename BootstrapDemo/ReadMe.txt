@@ -30,7 +30,24 @@
 27) Use .thumbnail and .caption for thumbnails
 28) Use .panel, .panel-default, .panel-primary, .panel-info, .panel-title, .panel-footer, .panel-body to get panel semantics, styling, spacing, etc.
 29) Use .well, .well-sm, .well-lg for panel-like sections 
-
-
-
-Bootstrap Plugins
+30) Use data-toggle="collapse" and class="collapse" for collapse functionality, use class collapse in to show section initially
+31) To build accordian, use .panel-group, .panel-collapse, .collapse
+32) For modals, use .modal, .fade, .modal-dialog, .modal-content, data-dismiss="modal", data-toggle="modal"
+33) You can hook into Bootstrap custom events in JS, e.g., 
+	$sentDialog.on("hidden.bs.modal", function () {
+        alert("close");
+    });
+34) For tabs use .active, .tab-pane .tab-content, data-toggle="tab", .nav-justified, 
+35) For tooltips use data-toggle="tooltip", title="Press Here", data-placement="right", data-delay="500", data-html="true"
+	$("#contactForm input[type=submit]").tooltip();
+	$("#contactForm input[type=submit]").tooltip({
+        placement: "left"        
+    });
+36) For alerts use .alert, .alert-warning, .collapse, data-dismiss="alert" and script it to not remove from DOM since we used data-dismiss="alert"
+	$sentAlert.on("close.bs.alert", function () {
+        $sentAlert.hide();
+        return false;
+    });
+37) For carousel use .carousel, .slide, .carousel-indicators, data-interval="2000", .active, data-slide-to="0", .carousel-inner, .item
+	$("#theCarousel").carousel();
+38) For carousel navigation and caption use .carousel-control, .left, .right, data-slide="prev", data-slide="next", <span class="icon-prev"></span>, carousel-caption

@@ -39,6 +39,11 @@
                     </ol>
                     <h1>Contact Us</h1>
                 </div>
+
+                <div class="alert alert-warning collapse" id="sentAlert">
+                    <a href="#" data-dismiss="alert" class="close">&times;</a>
+                    <p>This doesn't work, it's not real</p>
+                </div>
                 
                 <p>
                     Lebowski ipsum when will you find these guys? Lebowski ipsum when will you find these guys? Lebowski ipsum when will you find these guys?
@@ -134,6 +139,9 @@
                             </div>
                             <input type="Submit" value="Submit" class="btn btn-success" />
                         </form>
+
+                        <!--<a href="#sentDialog" class="btn btn-info" data-toggle="modal">Show Dialog...</a>-->
+
                     </div>
                     <h3>Our fake address</h3>
                     <div class="col-md-6">
@@ -150,43 +158,71 @@
                         </address>
                     </div>
                 </div>
-                <div class="row">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="nameInput" class="control-label col-md-2">Your Name</label>
-                            <div class="col-md-10">
-                                <input name="nameInput" type="text" class="form-control" placeholder="e.g., Your Name" />
-                            </div>
+
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#formTab" data-toggle="tab">Contact Form</a></li>
+                    <li><a href="#addressTab" data-toggle="tab">Address</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="well tab-pane active" id="formTab">
+                        <div class="row">
+                            <form class="form-horizontal" id="contactForm">
+                                <div class="form-group">
+                                    <label for="nameInput" class="control-label col-md-2">Your Name</label>
+                                    <div class="col-md-10">
+                                        <input name="nameInput" type="text" class="form-control" placeholder="e.g., Your Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">Email</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">Reason</label>
+                                    <div class="col-md-10">
+                                        <select class="form-control">
+                                            <option>Adoration</option>
+                                            <option>Ordering a White Russian</option>
+                                            <option>Complaint</option>
+                                            <option>I am lost</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">Message</label>
+                                    <div class="col-md-10">
+                                        <textarea cols="40" rows"6" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-2">
+                                        <input type="Submit" value="Submit" class="btn btn-success" data-toggle="tooltip" 
+                                               title="<img src='images/lebowski-1.jpg' class='img-responsive' />"
+                                               data-placement="right" data-html="true" />
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-2">Email</label>
-                            <div class="col-md-10">
-                                <input class="form-control" />
-                            </div>
+                    </div>
+                    <div class="well tab-pane" id="addressTab">
+                        <h3>Our fake address</h3>
+                        <div class="col-md-6">
+                            <address>
+                                Big Lebowski Fan Page<br />
+                                123 Main Street<br />
+                                Rug Ties The Room Together, CA 98765<br />
+                                <abbr title="Phone">P:</abbr>
+                                425.555.0100
+                            </address>
+                            <address>
+                                <strong>Support:</strong> <a href="mailto:support@fake.com">mailto:support@fake.com</a><br />
+                                <strong>Marketing:</strong> <a href="mailto:marketing@fake.com">mailto:marketing@fake.com</a>
+                            </address>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-2">Reason</label>
-                            <div class="col-md-10">
-                                <select class="form-control">
-                                    <option>Adoration</option>
-                                    <option>Ordering a White Russian</option>
-                                    <option>Complaint</option>
-                                    <option>I am lost</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-2">Message</label>
-                            <div class="col-md-10">
-                                <textarea cols="40" rows"6" class="form-control"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-2">
-                                <input type="Submit" value="Submit" class="btn btn-success" />
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </section>
         </section>
@@ -194,6 +230,23 @@
         <footer class="container">
             <p>Test placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.</p>
         </footer>
+    </div>
+
+    <div class="modal fade" id="sentDialog" tabindex="1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                    <h4>Thanks for clicking</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This form doesn't really work...haha</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

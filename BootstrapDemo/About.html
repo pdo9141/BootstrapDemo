@@ -118,55 +118,102 @@
                     </div>
                 </div>
 
-                <h3>Photo Attributions</h3>
+                <ul class="nav nav-pills navbar-default">
+                    <li><a href="#attributions" data-toggle="collapse">Attributions</a></li>
+                    <li><a href="#pics" data-toggle="collapse">Pictures</a></li>
+                </ul>
+
                 <!-- Use col-md-6 to take up half, no need to add to 12 -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-group">
-                            <li class="list-group-item active">
-                                <span class="badge">15</span>
-                                ginnerrobot on Flickr
-                            </li>
-                            <li class="list-group-item">ginnerrobot on Flickr</li>
-                            <li class="list-group-item">ginnerrobot on Flickr</li>
-                            <li class="list-group-item">ginnerrobot on Flickr</li>
-                            <li class="list-group-item">ginnerrobot on Flickr</li>
-                            <li class="list-group-item">ginnerrobot on Flickr</li>
-                            <li class="list-group-item">
-                                <span class="badge"><span class="glyphicon glyphicon-earphone"></span></span>
-                                ginnerrobot on Flickr
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="thumbnail">
-                            <a href="#"><img src="images/lebowski-1.jpg" alt="1" /></a>
-                            <div class="caption">Caption 1</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="thumbnail">
-                            <a href="#"><img src="images/lebowski-2.jpg" alt="2" /></a>
-                            <div class="caption">Caption 2</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="thumbnail">
-                            <a href="#"><img src="images/lebowski-1.jpg" alt="1" /></a>
-                            <div class="caption">Caption 1</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="thumbnail">
-                            <a href="#"><img src="images/lebowski-2.jpg" alt="2" /></a>
-                            <div class="caption">Caption 2</div>
+                <div id="attributions" class="collapse">
+                    <div class="row">
+                        <h3>Photo Attributions</h3>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item active">
+                                    <span class="badge">15</span>
+                                    ginnerrobot on Flickr
+                                </li>
+                                <li class="list-group-item">ginnerrobot on Flickr</li>
+                                <li class="list-group-item">ginnerrobot on Flickr</li>
+                                <li class="list-group-item">ginnerrobot on Flickr</li>
+                                <li class="list-group-item">ginnerrobot on Flickr</li>
+                                <li class="list-group-item">ginnerrobot on Flickr</li>
+                                <li class="list-group-item">
+                                    <span class="badge"><span class="glyphicon glyphicon-earphone"></span></span>
+                                    ginnerrobot on Flickr
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
+                <div id="pics" class="collapse in">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/lebowski-1.jpg" alt="1" /></a>
+                                <div class="caption">Caption 1</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/lebowski-2.jpg" alt="2" /></a>
+                                <div class="caption">Caption 2</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/lebowski-1.jpg" alt="1" /></a>
+                                <div class="caption">Caption 1</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#"><img src="images/lebowski-2.jpg" alt="2" /></a>
+                                <div class="caption">Caption 2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="accordion" class="panel-group">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#first" data-toggle="collapse" data-parent="#accordion">First</a>
+                            </div>
+                        </div>
+                        <div class="panel-collapse collapse in" id="first">
+                            <div class="panel-body">
+                                <img src="images/lebowski-1.jpg" alt="1" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#second" data-toggle="collapse" data-parent="#accordion">Second</a>
+                            </div>
+                        </div>
+                        <div class="panel-collapse collapse" id="second">
+                            <div class="panel-body">
+                                <img src="images/lebowski-1.jpg" alt="2" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <a href="#third" data-toggle="collapse" data-parent="#accordion">Third</a>
+                            </div>
+                        </div>
+                        <div class="panel-collapse collapse" id="third">
+                            <div class="panel-body">
+                                <img src="images/lebowski-1.jpg" alt="3" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>            
         </section>
         <hr />
